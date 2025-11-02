@@ -97,7 +97,7 @@
 
 ## Frontend Implementation
 
-- [ ] 8. Initialize frontend project structure and dependencies
+- [x] 8. Initialize frontend project structure and dependencies
   - Create Next.js 16 app with TypeScript and Tailwind CSS using App Router
   - Install Axios for HTTP requests
   - Install React Testing Library and Jest for component testing
@@ -106,7 +106,7 @@
   - Create directory structure for app routes, components, lib, and tests
   - _Requirements: 7.1, 7.2, 7.3, 7.4_
 
-- [ ] 9. Create API client and utilities
+- [x] 9. Create API client and utilities
   - Create API client module with Axios instance configured for backend base URL
   - Implement token storage and retrieval functions using localStorage
   - Add request interceptor to attach JWT token to Authorization header
@@ -114,15 +114,15 @@
   - Create utility functions for API calls (register, login, getSweets, purchaseSweet, etc.)
   - _Requirements: 1.4, 7.1_
 
-- [ ] 10. Implement authentication UI with TDD
-  - [ ] 10.1 Write authentication component tests
+- [x] 10. Implement authentication UI with TDD
+  - [x] 10.1 Write authentication component tests
     - Write test for LoginForm rendering email and password inputs
     - Write test for LoginForm submission calling login API with credentials
     - Write test for successful login storing token in localStorage
     - Write test for RegisterForm submission calling register API
     - Write test for form validation displaying error messages
     - _Requirements: 7.1, 7.2, 7.4_
-  - [ ] 10.2 Implement authentication components and pages
+  - [x] 10.2 Implement authentication components and pages
     - Create LoginForm component with email and password inputs using shadcn/ui
     - Implement form submission handler that calls login API and stores token
     - Create RegisterForm component with email and password inputs
@@ -133,15 +133,15 @@
     - Add redirect to dashboard after successful authentication
     - _Requirements: 7.1, 7.2, 7.3, 7.4_
 
-- [ ] 11. Implement sweet catalog display with TDD
-  - [ ] 11.1 Write sweet component tests
+- [x] 11. Implement sweet catalog display with TDD
+  - [x] 11.1 Write sweet component tests
     - Write test for SweetList fetching and displaying sweets from API
     - Write test for SweetCard rendering sweet name, category, price, and quantity
     - Write test for SweetCard showing "Out of Stock" when quantity is 0
     - Write test for purchase button disabled when quantity is 0
     - Write test for purchase button click calling purchaseSweet API
     - _Requirements: 2.1, 2.2, 2.3, 2.4, 4.1_
-  - [ ] 11.2 Implement sweet display components
+  - [x] 11.2 Implement sweet display components
     - Create SweetCard component displaying sweet details in shadcn/ui Card
     - Add purchase button that calls purchaseSweet API on click
     - Disable purchase button when quantity is 0 or during loading
@@ -151,7 +151,7 @@
     - Create dashboard page at app/dashboard/page.tsx with SweetList
     - _Requirements: 2.1, 2.2, 2.3, 2.4, 4.1, 4.4_
 
-- [ ] 12. Implement search and filter UI
+- [x] 12. Implement search and filter UI
   - Create SearchBar component with name input and category select dropdown
   - Implement search handler that calls search API with query parameters
   - Update SweetList to accept search filters and fetch filtered results
@@ -159,14 +159,14 @@
   - Integrate SearchBar into dashboard page above SweetList
   - _Requirements: 3.1, 3.2_
 
-- [ ] 13. Implement admin panel with TDD
-  - [ ] 13.1 Write admin component tests
+- [x] 13. Implement admin panel with TDD
+  - [x] 13.1 Write admin component tests
     - Write test for AdminForm rendering sweet creation form fields
     - Write test for AdminForm validation requiring all fields
     - Write test for AdminForm submission calling createSweet API
     - Write test for restock functionality calling restock API
     - _Requirements: 5.1, 6.1_
-  - [ ] 13.2 Implement admin components and page
+  - [x] 13.2 Implement admin components and page
     - Create AdminForm component with inputs for name, category, price, and quantity
     - Implement form submission handler that calls createSweet API
     - Add form validation for required fields and numeric values
@@ -175,7 +175,7 @@
     - Add role-based rendering to show admin page only for admin users
     - _Requirements: 5.1, 5.2, 5.3, 6.1, 6.2, 6.4_
 
-- [ ] 14. Add navigation and layout
+- [x] 14. Add navigation and layout
   - Create root layout with navigation bar showing login/logout and role-based links
   - Add navigation links to dashboard and admin panel (admin only)
   - Implement logout functionality that clears token and redirects to login
